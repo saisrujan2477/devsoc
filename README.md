@@ -3,7 +3,7 @@
 Campus Connect is a responsive web dashboard that allows students to browse campus events and notices in one place. The project provides an intuitive interface for viewing upcoming events, reading important notices, searching content, and filtering by category.
 
 ---
-
+This is netlify deployed link #https://campusconnect-kgp.netlify.app/
 ## Features
 
 ### Event Feed
