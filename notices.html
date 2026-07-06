@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | Notices</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <h2 class="logo">Campus Connect</h2>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="notices.html" class="active">Notices</a></li>
+
+        </ul>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+</header>
+
+<main class="container">
+
+    <h1>Campus Notices</h1>
+
+    <section class="controls">
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search notices..."
+        >
+
+        <select id="category-filter">
+
+            <option value="All">All Categories</option>
+            <option value="Academic">Academic</option>
+            <option value="Hostel">Hostel</option>
+            <option value="General">General</option>
+
+        </select>
+
+    </section>
+
+    <div id="loading" class="loading">
+        Loading notices...
+    </div>
+
+    <div id="error" class="error">
+        Failed to load notices. Please refresh the page.
+    </div>
+
+
+    <section>
+
+        <div id="notices-grid" class="events-grid"></div>
+
+    </section>
+
+</main>
+
+<!-- Notice Modal -->
+
+<div id="notice-modal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="close-notice-modal">&times;</span>
+
+        <h2 id="notice-title"></h2>
+
+        <p id="notice-date"></p>
+
+        <p id="notice-category"></p>
+
+        <p id="notice-content"></p>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p>© 2026 Campus Connect</p>
+
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/noticeModal.js"></script>
+<script src="js/notices.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>

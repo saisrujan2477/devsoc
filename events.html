@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Connect | Events</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+
+        <nav class="navbar">
+
+            <h2 class="logo">
+                Campus Connect
+            </h2>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="events.html" class="active">Events</a></li>
+
+                <li><a href="notices.html">Notices</a></li>
+
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main class="container">
+
+        <h1>Campus Events</h1>
+
+        <!-- Search & Filter -->
+
+        <section class="controls">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search events..."
+            >
+
+            <select id="category-filter">
+
+                <option value="All">All Categories</option>
+
+                <option value="Coding">Coding</option>
+
+                <option value="Cultural">Cultural</option>
+
+                <option value="Sports">Sports</option>
+
+                <option value="Other">Other</option>
+
+            </select>
+
+        </section>
+
+
+        <div id="loading" class="loading">
+            Loading events...
+        </div>
+
+        <div id="error" class="error">
+            Failed to load events. Please refresh the page.
+        </div>
+
+
+        <!-- Events Grid -->
+
+        <section>
+
+            <div id="events-grid" class="events-grid">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Event Modal -->
+
+    <div id="event-modal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="close-modal">&times;</span>
+
+            <img id="modal-image" src="" alt="">
+
+            <h2 id="modal-title"></h2>
+
+            <p id="modal-date"></p>
+
+            <p id="modal-venue"></p>
+
+            <p id="modal-category"></p>
+
+            <p id="modal-description"></p>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Campus Connect
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/data.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/theme.js"></script>
+
+</body>
+</html>
